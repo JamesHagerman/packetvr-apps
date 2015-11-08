@@ -1,5 +1,14 @@
 # PacketVR Example Apps 
 
+The Python scripts found in this repository demonstrate the simple API PacketVR uses to modify the VR scene from the command line. Not all of the scripts are currently working but the following scripts do:
+
+* **clear.py** - Will clear ALL of the generated objects from the scene
+* **cube.py** - Will generate a cube right under the "Launch New Terminal" button
+* **obj.py** - Will load the obj file from the URL, as well as the mtl file described in the obj file from the same URL path
+* **lots-of-cubes.py** - Will generate 100 cubes all on top of each other. Because these cubes respond to collisions, they will bounce out across the world...
+
+PLEASE Submit pull requests if you build anything fun with this API!
+
 # Note about PacketVR SSH limitations:
 
 Because Unity 5 is STILL using an old version of the C# (effectively using version 2.0 and sometimes 3.5 via Mono), we are limited in regards to available C# based SSH libraries are out there. Unity have said they're working on updating this but for now, it forces us to use one of the only free libraries I've found: SharpSSH
